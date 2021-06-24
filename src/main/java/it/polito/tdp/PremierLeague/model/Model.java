@@ -21,7 +21,9 @@ public class Model {
 	}
 	public void creaGrafo(double x) {
 		grafo = new SimpleDirectedWeightedGraph<Player, DefaultWeightedEdge>(DefaultWeightedEdge.class);
+		//nodi
 		Graphs.addAllVertices(grafo, dao.getCalciatoreByGoal(x,idMap));
+		//archi
 	}
 
 }
